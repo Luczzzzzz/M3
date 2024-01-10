@@ -21,5 +21,10 @@ namespace Match3
         {
             this.animal = animal;
         }
+
+        public T GetValue()
+        {
+            return this.animal;
+        }
     }
 }

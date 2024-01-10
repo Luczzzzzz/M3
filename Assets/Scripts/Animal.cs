@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Match3
 {
@@ -13,6 +14,8 @@ namespace Match3
             GetComponent<SpriteRenderer>().sprite = type.sprite;
         }
         public AnimalType GetType() => type;
+
+        internal void DestroyAnimal() => Destroy(gameObject);
     }
 
 }
